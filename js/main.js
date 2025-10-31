@@ -196,18 +196,18 @@ document.addEventListener('DOMContentLoaded', () => {
         const message = document.getElementById('message').value.trim();
 
         if (!name || !email || !subject || !message) {
-            showFormMessage('Please fill in all fields', 'error');
+            showFormMessage('Lütfen tüm alanları doldurun.', 'error');
             return;
         }
 
         if (!isValidEmail(email)) {
-            showFormMessage('Please enter a valid email address', 'error');
+            showFormMessage('Lütfen geçerli bir e-posta adresi girin.', 'error');
             return;
         }
 
         formMessage.style.opacity = '0';
         setTimeout(() => {
-            showFormMessage('Thank you! Your message has been sent successfully.', 'success');
+            showFormMessage('Teşekkürler! Mesajınız başarıyla gönderildi.', 'success');
             contactForm.reset();
         }, 240);
     }
