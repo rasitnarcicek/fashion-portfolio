@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A minimal, responsive, and performance-optimized website showcasing modern web development best practices.">
+  <meta name="theme-color" content="#2c3e50">
+  
+  <!-- Open Graph meta tags -->
+  <meta property="og:title" content="Minimal Responsive Site">
+  <meta property="og:description" content="A minimal, responsive, and performance-optimized website showcasing modern web development best practices.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com">
+  <meta property="og:image" content="/images/og-image.jpg">
+  
+  <!-- Twitter Card meta tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Minimal Responsive Site">
+  <meta name="twitter:description" content="A minimal, responsive, and performance-optimized website showcasing modern web development best practices.">
+  <meta name="twitter:image" content="/images/og-image.jpg">
+  
+  <!-- Favicon references -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  
+  <title>Minimal Responsive Site</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">Logo</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="nav-toggle-icon"></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-container">
+      <h1 class="hero-title">Welcome to Our Minimal Site</h1>
+      <p class="hero-subtitle">Performance-optimized and fully responsive</p>
+      <a href="#about" class="hero-cta">Learn More</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About Us</h2>
+      <div class="about-grid">
+        <div class="about-content">
+          <p>We create beautiful, performant, and responsive websites that work seamlessly across all devices. Our approach focuses on clean design, optimal performance, and exceptional user experience.</p>
+          <p>Every element is carefully crafted to ensure fast loading times and smooth interactions, from mobile phones to desktop computers.</p>
+        </div>
+        <div class="about-image">
+          <picture>
+            <source srcset="/images/about-small.webp 480w, /images/about-medium.webp 768w, /images/about-large.webp 1200w" type="image/webp">
+            <source srcset="/images/about-small.jpg 480w, /images/about-medium.jpg 768w, /images/about-large.jpg 1200w" type="image/jpeg">
+            <img 
+              src="/images/about-medium.jpg" 
+              alt="About us illustration" 
+              loading="lazy"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              width="600"
+              height="400"
+            >
+          </picture>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section section-alt" id="services">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Responsive Design</h3>
+          <p class="service-description">Mobile-first designs that adapt beautifully to any screen size.</p>
+        </article>
+        
+        <article class="service-card">
+          <div class="service-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Performance</h3>
+          <p class="service-description">Lightning-fast load times with optimized assets and lazy loading.</p>
+        </article>
+        
+        <article class="service-card">
+          <div class="service-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 12H22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="service-title">SEO Ready</h3>
+          <p class="service-description">Built with proper meta tags and semantic HTML for better search visibility.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <h2 class="section-title">Gallery</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <picture>
+            <source srcset="/images/gallery-1-small.webp 480w, /images/gallery-1-large.webp 800w" type="image/webp">
+            <source srcset="/images/gallery-1-small.jpg 480w, /images/gallery-1-large.jpg 800w" type="image/jpeg">
+            <img 
+              src="/images/gallery-1-small.jpg" 
+              alt="Gallery image 1" 
+              loading="lazy"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              width="400"
+              height="300"
+            >
+          </picture>
+        </div>
+        <div class="gallery-item">
+          <picture>
+            <source srcset="/images/gallery-2-small.webp 480w, /images/gallery-2-large.webp 800w" type="image/webp">
+            <source srcset="/images/gallery-2-small.jpg 480w, /images/gallery-2-large.jpg 800w" type="image/jpeg">
+            <img 
+              src="/images/gallery-2-small.jpg" 
+              alt="Gallery image 2" 
+              loading="lazy"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              width="400"
+              height="300"
+            >
+          </picture>
+        </div>
+        <div class="gallery-item">
+          <picture>
+            <source srcset="/images/gallery-3-small.webp 480w, /images/gallery-3-large.webp 800w" type="image/webp">
+            <source srcset="/images/gallery-3-small.jpg 480w, /images/gallery-3-large.jpg 800w" type="image/jpeg">
+            <img 
+              src="/images/gallery-3-small.jpg" 
+              alt="Gallery image 3" 
+              loading="lazy"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              width="400"
+              height="300"
+            >
+          </picture>
+        </div>
+        <div class="gallery-item">
+          <picture>
+            <source srcset="/images/gallery-4-small.webp 480w, /images/gallery-4-large.webp 800w" type="image/webp">
+            <source srcset="/images/gallery-4-small.jpg 480w, /images/gallery-4-large.jpg 800w" type="image/jpeg">
+            <img 
+              src="/images/gallery-4-small.jpg" 
+              alt="Gallery image 4" 
+              loading="lazy"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              width="400"
+              height="300"
+            >
+          </picture>
+        </div>
+        <div class="gallery-item">
+          <picture>
+            <source srcset="/images/gallery-5-small.webp 480w, /images/gallery-5-large.webp 800w" type="image/webp">
+            <source srcset="/images/gallery-5-small.jpg 480w, /images/gallery-5-large.jpg 800w" type="image/jpeg">
+            <img 
+              src="/images/gallery-5-small.jpg" 
+              alt="Gallery image 5" 
+              loading="lazy"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              width="400"
+              height="300"
+            >
+          </picture>
+        </div>
+        <div class="gallery-item">
+          <picture>
+            <source srcset="/images/gallery-6-small.webp 480w, /images/gallery-6-large.webp 800w" type="image/webp">
+            <source srcset="/images/gallery-6-small.jpg 480w, /images/gallery-6-large.jpg 800w" type="image/jpeg">
+            <img 
+              src="/images/gallery-6-small.jpg" 
+              alt="Gallery image 6" 
+              loading="lazy"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              width="400"
+              height="300"
+            >
+          </picture>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-content">
+        <p>We'd love to hear from you. Reach out to discuss your project or just say hello.</p>
+        <a href="mailto:hello@example.com" class="btn btn-primary">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Minimal Responsive Site. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
