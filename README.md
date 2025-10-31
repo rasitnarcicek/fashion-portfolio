@@ -1,6 +1,6 @@
-# Elena Noir - Fashion Designer Portfolio
+# Mehmet Raşit NARÇİÇEK - Tekstil, Moda & Grafik Tasarımcı Portfolyosu
 
-A modern, minimal, and elegant portfolio website for fashion designers. Built with clean HTML5, CSS3, and vanilla JavaScript.
+Modern, minimal ve şık bir portfolyo web sitesi. Temiz HTML5, CSS3 ve vanilla JavaScript ile oluşturulmuştur.
 
 ## Features
 
@@ -11,34 +11,41 @@ A modern, minimal, and elegant portfolio website for fashion designers. Built wi
 - Generous whitespace for elegance
 - Professional typography using Google Fonts (Playfair Display & Inter)
 
-### Sections
-1. **Hero Section**
-   - Full-screen hero with impressive visual
-   - Smooth scroll indicator
-   - Elegant animated title
+### Bölümler (Sections)
+1. **Hero Bölümü**
+   - Tam ekran kahraman bölümü
+   - Yumuşak kaydırma göstergesi
+   - Zarif animasyonlu başlık
 
-2. **Featured Collections**
-   - Showcase of latest work
-   - Hover effects with overlays
-   - Responsive grid layout
+2. **Öne Çıkan Projeler**
+   - Son çalışmaların vitrini
+   - Hover efektleri ile katman gösterimi
+   - Duyarlı grid düzeni
 
-3. **Portfolio Gallery**
-   - Filterable portfolio items (Haute Couture, Ready to Wear, Accessories, Editorial)
-   - Lightbox/modal viewing
-   - Smooth hover animations
-   - Next/Previous navigation in lightbox
+3. **Portfolyo Galerisi**
+   - Filtrelenebilir portfolyo öğeleri (Nakış Tasarımları, 3D Metaverse, Grafik Tasarım, Teknik Giyim, Dijital İllüstrasyon)
+   - Lightbox/modal görüntüleme
+   - Yumuşak hover animasyonları
+   - Lightbox'ta önceki/sonraki navigasyon
 
-4. **About Section**
-   - Designer biography
-   - Design philosophy
-   - Achievement statistics
-   - Professional photo with decorative elements
+4. **Hakkımda Bölümü**
+   - Tasarımcı biyografisi
+   - Tasarım vizyonu
+   - Başarı istatistikleri
+   - Dekoratif elementlerle profesyonel fotoğraf
 
-5. **Contact Section**
-   - Working contact form with validation
-   - Contact information display
-   - Social media links
-   - Email and phone details
+5. **Uzmanlık ve Deneyim**
+   - Uzmanlık alanları
+   - Beceriler (3D & Moda, Grafik Tasarım)
+   - Eğitim geçmişi
+   - İş deneyimi
+   - İlgi alanları
+
+6. **İletişim Bölümü**
+   - Doğrulamalı çalışan iletişim formu
+   - İletişim bilgilerinin görüntülenmesi
+   - Sosyal medya linkleri
+   - E-posta ve lokasyon detayları
 
 ### Technical Features
 - ✅ Fully responsive (mobile, tablet, desktop)
