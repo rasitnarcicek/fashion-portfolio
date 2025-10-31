@@ -1,0 +1,134 @@
+# Elena Noir - Fashion Designer Portfolio
+
+A modern, minimal, and elegant portfolio website for fashion designers. Built with clean HTML5, CSS3, and vanilla JavaScript.
+
+## Features
+
+### Design & Style
+- Modern minimal design language
+- Black and white color palette with gold accents
+- High-quality, visual-focused layout
+- Generous whitespace for elegance
+- Professional typography using Google Fonts (Playfair Display & Inter)
+
+### Sections
+1. **Hero Section**
+   - Full-screen hero with impressive visual
+   - Smooth scroll indicator
+   - Elegant animated title
+
+2. **Featured Collections**
+   - Showcase of latest work
+   - Hover effects with overlays
+   - Responsive grid layout
+
+3. **Portfolio Gallery**
+   - Filterable portfolio items (Haute Couture, Ready to Wear, Accessories, Editorial)
+   - Lightbox/modal viewing
+   - Smooth hover animations
+   - Next/Previous navigation in lightbox
+
+4. **About Section**
+   - Designer biography
+   - Design philosophy
+   - Achievement statistics
+   - Professional photo with decorative elements
+
+5. **Contact Section**
+   - Working contact form with validation
+   - Contact information display
+   - Social media links
+   - Email and phone details
+
+### Technical Features
+- ✅ Fully responsive (mobile, tablet, desktop)
+- ✅ Smooth scroll navigation
+- ✅ Lazy loading for images
+- ✅ Page transition animations
+- ✅ SEO optimized
+- ✅ Cross-browser compatible
+- ✅ Fast loading with optimized assets
+- ✅ Fixed navbar with scroll effect
+- ✅ Mobile hamburger menu
+- ✅ Back to top button
+- ✅ Keyboard navigation support (ESC, Arrow keys for lightbox)
+
+## File Structure
+
+```
+.
+├── index.html          # Main HTML file
+├── css/
+│   └── style.css      # Main stylesheet
+├── js/
+│   └── main.js        # JavaScript functionality
+├── images/
+│   ├── hero/          # Hero section images
+│   ├── gallery/       # Portfolio images
+│   └── about/         # About section images
+└── README.md          # This file
+```
+
+## Setup & Deployment
+
+### Local Development
+1. Clone the repository
+2. Open `index.html` in your browser
+3. No build process required!
+
+### Deployment
+This website is deployment-ready for any static hosting service:
+- **Netlify**: Drag and drop the entire folder
+- **Vercel**: Connect your Git repository
+- **GitHub Pages**: Push to a repository and enable Pages
+- **Traditional hosting**: Upload all files via FTP
+
+## Customization
+
+### Colors
+Edit CSS variables in `css/style.css`:
+```css
+:root {
+    --color-bg: #0c0c0c;
+    --color-accent: #d6b77d;
+    --color-text: #f5f5f5;
+}
+```
+
+### Fonts
+Change fonts in the HTML `<head>` and update CSS variables:
+```css
+--font-heading: "Playfair Display", serif;
+--font-body: "Inter", sans-serif;
+```
+
+### Content
+- Replace placeholder images with your own
+- Update text content in `index.html`
+- Modify contact information
+- Add/remove portfolio items as needed
+
+## Browser Support
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Mobile browsers (iOS Safari, Chrome Mobile)
+
+## Performance
+- Optimized images from Unsplash
+- Lazy loading implementation
+- Minimal external dependencies
+- Clean, efficient code
+
+## Credits
+- **Fonts**: Google Fonts (Playfair Display, Inter)
+- **Icons**: Font Awesome 6
+- **Images**: Unsplash (placeholder images)
+
+## License
+This project is open source and available for personal and commercial use.
+
+---
+
+**Built with ❤️ for fashion designers**

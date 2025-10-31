@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modern fashion designer portfolio showcasing innovative designs and creative collections.">
+    <meta name="keywords" content="fashion, designer, portfolio, haute couture, runway">
+    <meta name="author" content="Elena Noir">
+
+    <title>Elena Noir | Fashion Designer</title>
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJ2V9AOk6vAn1hRBVxCgGvZq0d3CyZU8Gd1Y/3dt8sYh4p9X4G4BbswKg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">ELENA NOIR</a>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button type="button" class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="hero-title-main">Timeless</span>
+                    <span class="hero-title-sub">Elegance</span>
+                </h1>
+                <p class="hero-description">Where art meets fashion, creating stories through design</p>
+                <a href="#portfolio" class="btn-primary">Explore Collections</a>
+            </div>
+        </div>
+        <div class="scroll-indicator" aria-hidden="true">
+            <span class="scroll-text">Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Featured Collections -->
+    <section class="featured">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Latest Work</span>
+                <h2 class="section-title">Featured Collections</h2>
+            </div>
+            <div class="featured-grid">
+                <div class="featured-item" data-aos="fade-up">
+                    <div class="featured-image">
+                        <img src="images/gallery/featured-01.jpg" alt="Avant-Garde 2024 collection" loading="lazy" width="800" height="420">
+                        <div class="featured-overlay">
+                            <h3>Avant-Garde 2024</h3>
+                            <p>Bold statements, fearless designs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="featured-image">
+                        <img src="images/gallery/featured-02.jpg" alt="Minimalist Luxe collection" loading="lazy" width="800" height="420">
+                        <div class="featured-overlay">
+                            <h3>Minimalist Luxe</h3>
+                            <p>Sophistication in simplicity</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="featured-image">
+                        <img src="images/gallery/featured-03.jpg" alt="Evening Grace lookbook" loading="lazy" width="800" height="420">
+                        <div class="featured-overlay">
+                            <h3>Evening Grace</h3>
+                            <p>Elegance redefined</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">My Work</span>
+                <h2 class="section-title">Portfolio</h2>
+            </div>
+
+            <div class="portfolio-filters" role="tablist" aria-label="Portfolio filters">
+                <button class="filter-btn active" data-filter="all" type="button">All</button>
+                <button class="filter-btn" data-filter="haute-couture" type="button">Haute Couture</button>
+                <button class="filter-btn" data-filter="ready-to-wear" type="button">Ready to Wear</button>
+                <button class="filter-btn" data-filter="accessories" type="button">Accessories</button>
+                <button class="filter-btn" data-filter="editorial" type="button">Editorial</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="haute-couture" data-aos="fade-up">
+                    <div class="portfolio-image">
+                        <img src="images/gallery/portfolio-01.jpg" alt="Midnight Elegance haute couture gown" loading="lazy" width="800" height="360">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Midnight Elegance</h3>
+                                <p>Haute Couture</p>
+                            </div>
+                            <button class="btn-view" type="button" aria-label="View Midnight Elegance" data-lightbox="gallery-1">
+                                <i class="fas fa-search-plus" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="ready-to-wear" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-image">
+                        <img src="images/gallery/portfolio-02.jpg" alt="Urban Chic ready-to-wear looks" loading="lazy" width="800" height="360">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Urban Chic</h3>
+                                <p>Ready to Wear</p>
+                            </div>
+                            <button class="btn-view" type="button" aria-label="View Urban Chic" data-lightbox="gallery-2">
+                                <i class="fas fa-search-plus" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="editorial" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-image">
+                        <img src="images/gallery/portfolio-03.jpg" alt="Vogue editorial fashion photography" loading="lazy" width="800" height="360">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Vogue Editorial</h3>
+                                <p>Editorial</p>
+                            </div>
+                            <button class="btn-view" type="button" aria-label="View Vogue Editorial" data-lightbox="gallery-3">
+                                <i class="fas fa-search-plus" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="accessories" data-aos="fade-up">
+                    <div class="portfolio-image">
+                        <img src="images/gallery/portfolio-04.jpg" alt="Statement accessories" loading="lazy" width="800" height="360">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Statement Pieces</h3>
+                                <p>Accessories</p>
+                            </div>
+                            <button class="btn-view" type="button" aria-label="View Statement Pieces" data-lightbox="gallery-4">
+                                <i class="fas fa-search-plus" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="haute-couture" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-image">
+                        <img src="images/gallery/portfolio-05.jpg" alt="Royal Affair couture gown" loading="lazy" width="800" height="360">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Royal Affair</h3>
+                                <p>Haute Couture</p>
+                            </div>
+                            <button class="btn-view" type="button" aria-label="View Royal Affair" data-lightbox="gallery-5">
+                                <i class="fas fa-search-plus" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="ready-to-wear" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-image">
+                        <img src="images/gallery/portfolio-06.jpg" alt="Summer Breeze ready-to-wear" loading="lazy" width="800" height="360">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Summer Breeze</h3>
+                                <p>Ready to Wear</p>
+                            </div>
+                            <button class="btn-view" type="button" aria-label="View Summer Breeze" data-lightbox="gallery-6">
+                                <i class="fas fa-search-plus" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="editorial" data-aos="fade-up">
+                    <div class="portfolio-image">
+                        <img src="images/gallery/portfolio-07.jpg" alt="Elle Magazine editorial" loading="lazy" width="800" height="360">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Elle Magazine</h3>
+                                <p>Editorial</p>
+                            </div>
+                            <button class="btn-view" type="button" aria-label="View Elle Magazine" data-lightbox="gallery-7">
+                                <i class="fas fa-search-plus" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="haute-couture" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-image">
+                        <img src="images/gallery/portfolio-08.jpg" alt="Golden Hour couture look" loading="lazy" width="800" height="360">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Golden Hour</h3>
+                                <p>Haute Couture</p>
+                            </div>
+                            <button class="btn-view" type="button" aria-label="View Golden Hour" data-lightbox="gallery-8">
+                                <i class="fas fa-search-plus" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="accessories" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-image">
+                        <img src="images/gallery/portfolio-09.jpg" alt="Luxury essentials accessories" loading="lazy" width="800" height="360">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Luxury Essentials</h3>
+                                <p>Accessories</p>
+                            </div>
+                            <button class="btn-view" type="button" aria-label="View Luxury Essentials" data-lightbox="gallery-9">
+                                <i class="fas fa-search-plus" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <img src="images/about/portrait-01.jpg" alt="Portrait of Elena Noir, fashion designer" loading="lazy" width="640" height="800">
+                    <div class="about-image-decoration" aria-hidden="true"></div>
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <span class="section-subtitle">About Me</span>
+                    <h2 class="section-title">Creating Fashion, Crafting Stories</h2>
+                    <p class="about-description">
+                        With over a decade of experience in the fashion industry, I have dedicated my life to creating designs that transcend trends and speak to the soul. My work is a celebration of individuality, elegance, and the timeless beauty of well-crafted garments.
+                    </p>
+                    <p class="about-description">
+                        Educated at Parsons School of Design and having collaborated with prestigious fashion houses in Paris and Milan, I bring a unique perspective that blends classical technique with contemporary innovation. Each piece I create tells a story of craftsmanship, passion, and artistic vision.
+                    </p>
+
+                    <div class="about-philosophy">
+                        <h3>Design Philosophy</h3>
+                        <p>"Fashion is not just about clothing—it is about creating wearable art that empowers and transforms. I believe in designs that are both timeless and contemporary, pieces that make a statement while honoring the wearer's individuality."</p>
+                    </div>
+
+                    <div class="about-achievements">
+                        <div class="achievement-item">
+                            <div class="achievement-number">50+</div>
+                            <div class="achievement-label">Collections</div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-number">15+</div>
+                            <div class="achievement-label">Awards</div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-number">100+</div>
+                            <div class="achievement-label">Publications</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Get in Touch</span>
+                <h2 class="section-title">Let's Create Together</h2>
+                <p class="contact-intro">Whether you are interested in bespoke designs, collaborations, or simply wish to connect, I would love to hear from you.</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:hello@elenanoir.design">hello@elenanoir.design</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <a href="tel:+1234567890">+1 (234) 567-890</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Studio</h3>
+                            <p>New York, NY 10012<br>United States</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <h3>Follow Me</h3>
+                        <div class="social-links">
+                            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                            <a href="https://pinterest.com" target="_blank" rel="noopener" aria-label="Pinterest"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                            <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm" data-aos="fade-left" novalidate>
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                    <div class="form-message" id="formMessage" role="status" aria-live="polite"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">ELENA NOIR</div>
+                <div class="footer-social">
+                    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://pinterest.com" target="_blank" rel="noopener" aria-label="Pinterest"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2024 Elena Noir. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Portfolio image viewer">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close lightbox">
+                <i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+            <button class="lightbox-prev" id="lightboxPrev" type="button" aria-label="Previous image">
+                <i class="fas fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <button class="lightbox-next" id="lightboxNext" type="button" aria-label="Next image">
+                <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
+            <img src="" alt="Portfolio image" id="lightboxImage">
+        </div>
+    </div>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>
